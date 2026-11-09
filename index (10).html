@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[CLINIC NAME] | Dentist & Dental Clinic – [CLINIC ADDRESS]</title>
+  <meta name="description" content="[CLINIC NAME] offers root canal, dental implants, braces, teeth whitening and family dental care. Book an appointment online or on WhatsApp.">
+  <meta name="theme-color" content="#0b6e74">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Local SEO: replace placeholders with real details -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "[CLINIC NAME]",
+    "address": "[CLINIC ADDRESS]",
+    "telephone": "[PHONE NUMBER]",
+    "email": "[CLINIC EMAIL]",
+    "openingHours": "[CLINIC TIMINGS]",
+    "url": "https://www.example.com/",
+    "hasMap": "[GOOGLE BUSINESS PROFILE URL]"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="[CLINIC NAME] home">
+        <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0b6e74"/><path d="M20 10c-3-2.2-8-1.4-9 3.2-.7 3.200.8 5.600 1.700 9 .6 2.300 1.100 6.800 3.100 6.800 1.700 0 1.600-4.400 4.200-4.400s2.500 4.400 4.200 4.400c2 0 2.500-4.500 3.100-6.800.9-3.400 2.400-5.800 1.700-9-1-4.600-6-5.400-9-3.200Z" fill="#fff"/></svg>
+        <span>[CLINIC NAME]</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav id="menu" class="nav__menu" aria-label="Main">
+        <a href="#about">Doctor</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#appointment" class="btn btn--primary btn--sm">Book appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="pill">Family &amp; cosmetic dentistry in [CLINIC ADDRESS]</p>
+          <h1>Your Smile Deserves the Best Dental Care</h1>
+          <p class="lead">Experience comfortable, personalized and advanced dental care for your entire family.</p>
+          <div class="hero__cta">
+            <a href="#appointment" class="btn btn--primary">Book an Appointment</a>
+            <a href="#" class="btn btn--wa" data-wa target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+          <ul class="trust">
+            <li><strong>[EXPERIENCE]</strong> Experienced dentist</li>
+            <li><strong>Modern</strong> equipment</li>
+            <li><strong>Patient-</strong>focused care</li>
+          </ul>
+        </div>
+        <figure class="hero__img">
+          <img data-img="hero" src="images/hero-dentist.webp" alt="Dentist smiling in a modern dental clinic" width="640" height="720" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <figure class="about__img">
+          <img data-img="doctor" src="images/doctor-portrait.webp" alt="Portrait of [DOCTOR NAME], dentist at [CLINIC NAME]" width="480" height="600" loading="lazy">
+          <figcaption><strong>[EXPERIENCE]</strong> of clinical practice</figcaption>
+        </figure>
+        <div>
+          <h2>Meet [DOCTOR NAME]</h2>
+          <p class="muted">[DOCTOR QUALIFICATION]</p>
+          <dl class="facts">
+            <div><dt>Registration no.</dt><dd>[REGISTRATION NUMBER]</dd></div>
+            <div><dt>Experience</dt><dd>[EXPERIENCE]</dd></div>
+            <div><dt>Specialization</dt><dd>[SPECIALIZATION]</dd></div>
+          </dl>
+          <p>[DOCTOR NAME] leads [CLINIC NAME] with a simple aim: make dental care clear, comfortable and unhurried. Replace this paragraph with a short, accurate biography covering training, areas of interest and the patients you most often treat.</p>
+          <blockquote>
+            <p>Treatment philosophy: explain every option, agree on a plan together, and treat only what is needed.</p>
+          </blockquote>
+          <a href="#appointment" class="btn btn--primary">Consult the doctor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (cards rendered from script.js) -->
+    <section class="section section--tint" id="services">
+      <div class="container">
+        <div class="head">
+          <h2>Dental treatments for every age</h2>
+          <p class="muted">From routine check-ups to complete smile makeovers, all under one roof.</p>
+        </div>
+        <div class="grid services" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="head"><h2>Why patients choose [CLINIC NAME]</h2></div>
+        <div class="grid why">
+          <article class="card"><span class="ico">🩺</span><h3>Experienced professionals</h3><p>Care delivered by trained, registered dental practitioners.</p></article>
+          <article class="card"><span class="ico">🔬</span><h3>Modern technology</h3><p>Up-to-date equipment for accurate diagnosis and comfortable treatment.</p></article>
+          <article class="card"><span class="ico">🛋️</span><h3>Comfortable environment</h3><p>A calm, clean clinic designed to put nervous patients at ease.</p></article>
+          <article class="card"><span class="ico">📋</span><h3>Personalized plans</h3><p>Every treatment plan is built around your needs and goals.</p></article>
+          <article class="card"><span class="ico">💬</span><h3>Transparent costs</h3><p>You are told the estimated cost before treatment begins.</p></article>
+          <article class="card"><span class="ico">🤝</span><h3>Friendly patient care</h3><p>A welcoming team that listens and answers every question.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--tint" id="reviews">
+      <div class="container">
+        <div class="head">
+          <h2>What patients say</h2>
+          <p class="muted">Demo testimonials shown below. Replace them with genuine, verified patient reviews before launch.</p>
+        </div>
+        <div class="grid reviews">
+          <figure class="card review"><blockquote>“Replace with a real patient review about their experience at the clinic.”</blockquote><figcaption><span class="avatar">A.K.</span> Patient initials <small>Demo testimonial</small></figcaption></figure>
+          <figure class="card review"><blockquote>“Replace with a real patient review about treatment, staff or comfort.”</blockquote><figcaption><span class="avatar">R.S.</span> Patient initials <small>Demo testimonial</small></figcaption></figure>
+          <figure class="card review"><blockquote>“Replace with a real patient review about the booking and consultation.”</blockquote><figcaption><span class="avatar">M.P.</span> Patient initials <small>Demo testimonial</small></figcaption></figure>
+        </div>
+        <p class="center"><a class="btn btn--outline" href="[GOOGLE BUSINESS PROFILE URL]" target="_blank" rel="noopener">Read &amp; write Google reviews</a></p>
+      </div>
+    </section>
+
+    <!-- GALLERY (rendered from script.js) -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="head"><h2>Inside our clinic</h2><p class="muted">Tap any photo to view it larger.</p></div>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section class="section section--tint" id="appointment">
+      <div class="container booking">
+        <div>
+          <h2>Request an appointment</h2>
+          <p class="lead muted">Tell us when you would like to visit. Our team will contact you to confirm a time.</p>
+          <ul class="ticks">
+            <li>Requests are reviewed by the clinic team</li>
+            <li>Your appointment is not confirmed until we reply</li>
+            <li>Prefer chat? Send the details on WhatsApp</li>
+          </ul>
+        </div>
+        <div class="card form-card">
+          <form id="apptForm" novalidate>
+            <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required><small class="err"></small></div>
+            <div class="row">
+              <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><small class="err"></small></div>
+              <div class="field"><label for="email">Email <span class="muted">(optional)</span></label><input id="email" name="email" type="email" autocomplete="email"><small class="err"></small></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" required><small class="err"></small></div>
+              <div class="field"><label for="time">Preferred time</label>
+                <select id="time" name="time" required><option value="">Select time</option><option>Morning (9am – 12pm)</option><option>Afternoon (12pm – 4pm)</option><option>Evening (4pm – 8pm)</option></select><small class="err"></small></div>
+            </div>
+            <div class="field"><label for="service">Dental service</label><select id="service" name="service" required></select><small class="err"></small></div>
+            <div class="field"><label for="message">Additional message <span class="muted">(optional)</span></label><textarea id="message" name="message" rows="3"></textarea></div>
+            <button class="btn btn--primary btn--block" type="submit">Submit Appointment Request</button>
+          </form>
+          <div class="done" id="done" hidden tabindex="-1">
+            <h3>Request ready to send</h3>
+            <p>Thank you, <span id="doneName"></span>. Your request has <strong>not been confirmed yet</strong>. To get it to the clinic quickly, send the details on WhatsApp. The team will reply to confirm or suggest another time.</p>
+            <a class="btn btn--wa btn--block" id="doneWa" href="#" target="_blank" rel="noopener">Send details on WhatsApp</a>
+            <button class="btn btn--outline btn--block" id="again" type="button">Make another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2>Visit or contact us</h2>
+          <address>
+            <p><strong>Address</strong><br>[CLINIC ADDRESS]</p>
+            <p><strong>Phone</strong><br><a href="#" data-call>[PHONE NUMBER]</a></p>
+            <p><strong>WhatsApp</strong><br><a href="#" data-wa target="_blank" rel="noopener">[WHATSAPP NUMBER]</a></p>
+            <p><strong>Email</strong><br><a href="#" data-mail>[CLINIC EMAIL]</a></p>
+            <p><strong>Opening hours</strong><br>[CLINIC TIMINGS]</p>
+          </address>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary" data-call>Call Now</a>
+            <a href="#" class="btn btn--wa" data-wa target="_blank" rel="noopener">WhatsApp Now</a>
+            <a href="#" class="btn btn--outline" data-directions target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="[CLINIC NAME] on Google Maps" src="[GOOGLE MAPS EMBED URL]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="logo logo--light"><svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#fff"/><path d="M20 10c-3-2.2-8-1.4-9 3.2-.7 3.200.8 5.600 1.700 9 .6 2.300 1.100 6.800 3.100 6.800 1.700 0 1.600-4.400 4.200-4.400s2.500 4.400 4.200 4.400c2 0 2.500-4.500 3.100-6.800.9-3.400 2.400-5.800 1.700-9-1-4.600-6-5.400-9-3.200Z" fill="#0b6e74"/></svg><span>[CLINIC NAME]</span></a>
+        <p>Gentle, modern dental care for the whole family.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="YouTube">yt</a>
+          <a href="[GOOGLE BUSINESS PROFILE URL]" aria-label="Google Business Profile" target="_blank" rel="noopener">G</a>
+        </div>
+      </div>
+      <div><h3>Quick links</h3><a href="#about">Doctor</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#gallery">Gallery</a><a href="#appointment">Book appointment</a></div>
+      <div><h3>Services</h3><div id="footerServices"></div></div>
+      <div><h3>Contact</h3><p>[CLINIC ADDRESS]</p><a href="#" data-call>[PHONE NUMBER]</a><a href="#" data-mail>[CLINIC EMAIL]</a><p>[CLINIC TIMINGS]</p></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> [CLINIC NAME]. All rights reserved.</span>
+      <a href="#" id="privacyLink">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.500 15.200L2 22l4.900-1.400A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-2 1.400-.5.100-1.200.100-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .500l-.3.400-.4.500c-.1.100-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l2 .9c.3.100.5.200.5.300.1.100.1.600-.1 1.300Z"/></svg>
+  </a>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-btn lb-close" aria-label="Close">×</button>
+    <button class="lb-btn lb-prev" aria-label="Previous image">‹</button>
+    <img id="lbImg" alt="">
+    <button class="lb-btn lb-next" aria-label="Next image">›</button>
+    <p id="lbCap"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
