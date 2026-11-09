@@ -1,4 +1,4 @@
-/* ===== CONFIG: edit per client ===== */
+  /* ===== CONFIG: edit per client ===== */
 const CFG={brand:"Your Agency",wa:"910000000000",phone:"+910000000000",email:"hello@example.com",
 formspree:"https://formspree.io/f/YOUR_FORM_ID",address:"Add your office address here",hours:"Mon–Sat, 9:00–18:00 (edit)",
 social:{Instagram:"#",Facebook:"#",LinkedIn:"#"}};
